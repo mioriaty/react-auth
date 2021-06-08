@@ -1,5 +1,12 @@
 {
-  "plugins": ["@typescript-eslint", "react", "jsx-a11y", "import", "react-hooks", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "jsx-a11y",
+    "import",
+    "react-hooks",
+    "prettier"
+  ],
   "env": {
     "es6": true,
     "node": true
@@ -12,7 +19,10 @@
   ],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
       "rules": {
         "@typescript-eslint/promise-function-async": "off"
       }
@@ -26,7 +36,10 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".ts", ".tsx"]
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
       }
     ],
     "react/jsx-uses-react": "error",
@@ -47,7 +60,15 @@
     "react/sort-comp": [
       1,
       {
-        "order": ["static-methods", "static-variables", "instance-variables", "type-annotations", "lifecycle", "everything-else", "render"],
+        "order": [
+          "static-methods",
+          "static-variables",
+          "instance-variables",
+          "type-annotations",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ],
         "groups": {
           "lifecycle": [
             "displayName",
@@ -82,8 +103,19 @@
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-
-    "import/order": ["error", { "groups": ["builtin", "internal", "external", "index", "parent", "sibling"] }],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "internal",
+          "external",
+          "index",
+          "parent",
+          "sibling"
+        ]
+      }
+    ],
     "@typescript-eslint/prefer-reduce-type-parameter": "off",
     "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/no-invalid-this": "off",
@@ -113,7 +145,10 @@
     "@typescript-eslint/prefer-for-of": "off",
     "@typescript-eslint/prefer-regexp-exec": "off",
     "@typescript-eslint/no-empty-function": "off",
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/generic-type-naming": "off",
@@ -128,11 +163,7 @@
     "@typescript-eslint/unbound-method": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "varsIgnorePattern": "^_",
-        "argsIgnorePattern": "^_"
-      }
+      "error"
     ],
     "@typescript-eslint/no-untyped-public-signature": "off",
     "@typescript-eslint/no-unused-expressions": [
@@ -181,11 +212,16 @@
       }
     ],
     "prefer-const": "error",
-    "func-names": ["error", "never"],
-    "wrap-iife": ["error", "any"],
+    "func-names": [
+      "error",
+      "never"
+    ],
+    "wrap-iife": [
+      "error",
+      "any"
+    ],
     "no-extra-boolean-cast": "off",
     "linebreak-style": "off",
-
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/anchor-has-content": "off",
     "jsx-a11y/click-events-have-key-events": "off",
@@ -195,7 +231,10 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "moduleDirectory": ["node_modules", "src/"]
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
       }
     }
   }
